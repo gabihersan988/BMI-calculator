@@ -4,8 +4,10 @@ Implementa esta calculadora del IMC. [Demo](https://omiras.github.io/BMI-calcula
 Puedes seguir la formula:
 
 ```js
-    const imc = (weight / ((height*height)/10000))
+const imc = weight / ((height * height) / 10000);
 ```
 
 Intenta NO modificar el HTML. Usa selectores CSS para conseguirlo.
-Fíjate que los controles se encuentran dentro de un formulario. Deberás usar el evento ['submit'](https://learn.jquery.com/events/introduction-to-events/)
+
+Los datos a los cuales accedemos mediante JavaScript están dentro de un tag **form**.
+¿Qué es el evento [submit](https://javascript.info/forms-submit)?

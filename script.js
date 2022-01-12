@@ -1,26 +1,11 @@
-$(function() {
-    $("form" ).submit(function( event ) {
+const form = document.querySelector('form');
 
-        event.preventDefault();
-        
-        let height = $('#height').val()
-        let weight = $('#weight').val()
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
 
-        let imc = (weight / (height * height) * 10000).toFixed(2)
+  console.log("Valor del input: ", e.target.value)
 
-      $('#results').text(imc)
-        
-      if (imc<18.6) {
-        $('p:nth-of-type(1)').css('color', 'red')
-      }
+  // Tu código aquí --->
 
-      else if (imc>=18.6 && imc<=24.9) {
-        $('p:nth-of-type(2)').css('color', 'green')
-      }
 
-      else {
-        $('p:nth-of-type(3)').css('color', 'red')
-      }
-      
-    });
-}) 
+});
